@@ -48,9 +48,7 @@ function onGalleryClick(e) {
     }
   );
   instance.show();
-  window.addEventListener(`keydown`, (event) => {
-    if (event.code === "Escape") {
-      instance.close();
-    }
-  });
+}
+function onEscKeyPress(e) {
+  if (e.code === "Escape") instance.close();
 }
